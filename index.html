@@ -3,9 +3,15 @@
         <title>Redirecting</title>
         <body>
             <script>
-                const actual_url=window.location.href;
+                /*const actual_url=window.location.href;
                 var newUrl=actual_url.split('?').filter(Boolean).pop();
-                window.location="https://analytics.zoho.com/open-view/2908620000007116022?ZOHO_CRITERIA=%22Tipo%20de%20Producto%20por%20Cuenta%22.%22account_id%22%3D"+newUrl
+                console.log(newUrl);
+                var elId=newUrl.split('/').filter(Boolean).pop();
+                console.log(elId);
+                window.location="https://analytics.zoho.com/open-view/2908620000007116022?ZOHO_CRITERIA=%22Tipo%20de%20Producto%20por%20Cuenta%22.%22account_id%22%3D"+elId*/
+                const actual_url=window.location.href;
+                var newUrl=actual_url.split('/').filter(Boolean).pop();
+                alert(newUrl);
             </script>
         </body>
     </head>
